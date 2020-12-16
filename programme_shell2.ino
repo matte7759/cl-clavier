@@ -1,3 +1,5 @@
+//programme permettant d'ouvrir un client shell
+
 #include "KeyboardAzertyFr.h"
 
 void setup() {
